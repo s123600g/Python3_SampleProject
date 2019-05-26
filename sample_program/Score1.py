@@ -116,7 +116,7 @@ class Score():
 
         print('\n[Score-select_StuInfo]現有學生資訊清單：')
 
-        ''' 讀取顯示新增後學生資訊目錄 '''
+        ''' 讀取顯示所有學生資訊目錄 '''
         for read_key in list(self.stu_dict.keys()):
 
             print('{}：{}  '.format(
@@ -148,6 +148,61 @@ class Score():
                         self.stu_dict[input_SID]['數學'],
                         self.stu_dict[input_SID]['社會'],
                     ))
+
+                else:
+
+                    print('[Score-select_StuInfo]輸入學號並未存在，請再重新輸入.')
+
+    def select_StuScoreAVG(self):
+        '''
+        查詢學生總平均方法模組
+        '''
+
+        print('\n[Score-select_StuInfo]現有學生資訊清單：')
+
+        ''' 讀取顯示所有學生資訊目錄 '''
+        for read_key in list(self.stu_dict.keys()):
+
+            print('學號：{} , 姓名：{} , 國文：{}分 , 英文：{}分 , 數學：{}分 , 社會：{}分'.format(
+                read_key,
+                self.stu_dict[read_key]['Name'],
+                self.stu_dict[read_key]['國文'],
+                self.stu_dict[read_key]['英文'],
+                self.stu_dict[read_key]['數學'],
+                self.stu_dict[read_key]['社會'],
+            ))
+
+        print()
+
+        while True:
+
+            input_SID = input('請輸入欲查詢學生學號，如果不查詢請送出空訊息：')
+
+            ''' 判斷是否為空訊息，如果是空訊息就離開查詢學生總平均模式 '''
+            if input_SID == '':
+
+                print('[Score-select_StuInfo]離開查詢學生總平均模式.\n')
+
+                break
+
+            else:
+
+                ''' 判斷書入學號是否有存在 '''
+                if input_SID in list(self.stu_dict.keys()):
+
+                    print('[Score-select_StuInfo]查詢學生資訊如下：\n 學號：{} , 姓名：{} , 國文：{}分 , 英文：{}分 , 數學：{}分 , 社會：{}分'.format(
+                        input_SID,
+                        self.stu_dict[input_SID]['Name'],
+                        self.stu_dict[input_SID]['國文'],
+                        self.stu_dict[input_SID]['英文'],
+                        self.stu_dict[input_SID]['數學'],
+                        self.stu_dict[input_SID]['社會'],
+                    ))
+
+                    score_avg = (self.stu_dict[input_SID]['國文']+self.stu_dict[input_SID]
+                                 ['英文']+self.stu_dict[input_SID]['數學']+self.stu_dict[input_SID]['社會']) / 4
+
+                    print('該生總平均為：{:.2f}分\n'.format(score_avg))
 
                 else:
 
@@ -232,7 +287,7 @@ class Score():
                 # key 3  查詢學生總平均
                 elif input_OptionNumber == self.list_OptionKey[2]:
 
-                    pass
+                    self.select_StuScoreAVG()
 
                 # key 4  離開本系統
                 elif input_OptionNumber == self.list_OptionKey[3]:
