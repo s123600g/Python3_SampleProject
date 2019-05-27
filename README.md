@@ -32,15 +32,17 @@ SQLite："sqlite:///filename.db" <br/>
 MySQL："mysql://db_User:db_Password@db_Host/db_Schema" <br/>
 
 #### 執行程式前設置：
-1.SQLConfig.py <br/>
-**sample_SQLAlchemy**
-需設置**db_config**內參數：
+**1.SQLConfig.py** <br/>
+*sample_SQLAlchemy*
+需設置**db_config**內參數：<br/>
+<p><code>
     db_config = {
         'db_user': "Account",  # 帳戶名稱
         'db_psw': "Password",  # 帳戶密碼
         'db_host': "127.0.0.1",  # 資料庫位址
         'db_schema': "sample",  # 資料庫名稱
     }
+    </code></p>
 
 #### 更新資料表操作：
 使用flask-script和flask-migrate <br/>
