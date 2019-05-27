@@ -33,8 +33,10 @@ sample_SQLAlchemy、sample_SQLAlchemy_SQLite：使用ORM操作資料庫練習範
   
   <br/>
   2.開啟終端機(命令提示視窗)，終端機所在的位置必須要跟專案目錄一樣。<br/>
+  
   以 **E:\Project\Python3_SampleProject\sample_SQLAlchemy\** 位置為例子：<br/>
-  > 切換至E：<br/>
+  
+  切換至E：<br/>
   > >E:
    
 
