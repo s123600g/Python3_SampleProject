@@ -82,7 +82,9 @@ SQLALCHEMY_DATABASE_URI = "sqlite:///{}".format(SQLite_Path)
 使用flask-script和flask-migrate <br/>
 可參考以下連結資源：
 [在flask中使用flask-migrate管理数据库](https://blog.csdn.net/qq_33279781/article/details/79803376)
+
 <br/>
+
 [flask-migrate](https://flask-migrate.readthedocs.io/en/latest/)
 
 使用flask-script管理資料庫更動，命令如下：
@@ -126,13 +128,13 @@ SQLALCHEMY_DATABASE_URI = "sqlite:///{}".format(SQLite_Path)
    > cd Project\Project\Python3_SampleProject\sample_SQLAlchemy <br/>
     
   3.執行db init <br/>
-    > python3 manage.py db init <br/>
+   > python3 manage.py db init <br/>
   
   4.執行db migrate <br/>
-    > python3 manage.py db migrate <br/>
+   > python3 manage.py db migrate <br/>
     
   5.執行db upgrade <br/>
-    > python3 mange.py db upgrade  <br/>
+   > python3 mange.py db upgrade  <br/>
 
 sample_program：基本型態練習範例
 ----------------------------------------------------------------------------------------------------------------------------------
