@@ -34,6 +34,7 @@ sample_SQLAlchemy、sample_SQLAlchemy_SQLite：使用ORM操作資料庫練習範
   <br/>
   2.開啟終端機(命令提示視窗)，終端機所在的位置必須要跟專案目錄一樣。<br/>
   以 **E:\Project\Python3_SampleProject\sample_SQLAlchemy** 位置為例子：<br/>  
+  
   切換到E槽<br/>
   > E:  <br/>
   
@@ -43,8 +44,25 @@ sample_SQLAlchemy、sample_SQLAlchemy_SQLite：使用ORM操作資料庫練習範
   執行DB_initialize.bat<br/>
   > DB_initialize.bat <br/>
   
-* 手動更新資料庫操作：<br/>
+* 以手動更新資料庫操作：<br/>
+  1.先手動刪除migrations目錄與資料庫中alembic_version資料表。 <br/>
+  2.開啟終端機(命令提示視窗)，終端機所在的位置必須要跟專案目錄一樣。<br/>
+    以 **E:\Project\Python3_SampleProject\sample_SQLAlchemy** 位置為例子：<br/>  
 
+    切換到E槽<br/>
+    > E:  <br/>
+
+    切換到 Project\Python3_SampleProject\sample_SQLAlchemy 底下<br/>
+    > cd Project\Project\Python3_SampleProject\sample_SQLAlchemy <br/>
+    
+  3.執行python3 manage.py db init <br/>
+    > python3 manage.py db init <br/>
+  
+  4.執行python3 manage.py db migrate <br/>
+    > python3 manage.py db migrate <br/>
+    
+  5.執行python3 mange.py db upgrade <br/>
+    > python3 mange.py db upgrade  <br/>
 
 sample_program：基本型態練習範例
 ----------------------------------------------------------------------------------------------------------------------------------
