@@ -36,10 +36,11 @@ sample_program：基本型態練習範例
 <p><p/>
 
 ##### 成績登錄查詢系統簡單應用： 
-[1].Score1.py
-[2].Config1.py
+[1].Score1.py <br/>
+[2].Config1.py <br/>
 <p><p/>
+
 ##### 其他檔案：
-[1].data.db
-[2].data.txt
-[3].output.txt
+[1].data.db <br/>
+[2].data.txt <br/>
+[3].output.txt <br/>
