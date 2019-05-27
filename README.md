@@ -32,8 +32,12 @@ SQLite："sqlite:///filename.db" <br/>
 MySQL："mysql://db_User:db_Password@db_Host/db_Schema" <br/>
 
 #### 執行程式前設置：
-**1.SQLConfig.py** <br/>
-*sample_SQLAlchemy*
+**1.確認是否有存在建立好資料庫。**
+
+<p></p>
+
+**2.SQLConfig.py** <br/>
+*針對sample_SQLAlchemy-使用MySQL*
 需設置**db_config**內參數：<br/>
 <p><code>
     db_config = {
@@ -43,12 +47,14 @@ MySQL："mysql://db_User:db_Password@db_Host/db_Schema" <br/>
         'db_schema': "資料庫名稱",
     }
     </code></p>
-**SQLALCHEMY_DATABASE_URI**變數會去抓取**db_config**內參數<br/>
+    
+資料庫連接語法會抓取**SQLALCHEMY_DATABASE_URI**參數，此參數會去抓取**db_config**內參數自動產生配置完整DB API 語法。<br/>
 <p><code>
 SQLALCHEMY_DATABASE_URI = "mysql://{}:{}@{}/{}".format(
     db_config['db_user'], db_config['db_psw'], db_config['db_host'], db_config['db_schema'])
 </code></p>
 
+<p></p>
 #### 更新資料表操作：
 使用flask-script和flask-migrate <br/>
 可參考以下連結資源：
