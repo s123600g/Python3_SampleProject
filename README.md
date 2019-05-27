@@ -36,12 +36,12 @@ MySQL："mysql://db_User:db_Password@db_Host/db_Schema" <br/>
 *sample_SQLAlchemy*
 需設置**db_config**內參數：<br/>
 <p><code>
-    db_config = {
-        'db_user': "Account",  # 帳戶名稱
-        'db_psw': "Password",  # 帳戶密碼
-        'db_host': "127.0.0.1",  # 資料庫位址
-        'db_schema': "sample",  # 資料庫名稱
-    }
+    db_config = {<br/>
+        'db_user': "Account",  # 帳戶名稱 <br/>
+        'db_psw': "Password",  # 帳戶密碼 <br/>
+        'db_host': "127.0.0.1",  # 資料庫位址 <br/>
+        'db_schema': "sample",  # 資料庫名稱 <br/>
+    }<br/>
     </code></p>
 
 #### 更新資料表操作：
