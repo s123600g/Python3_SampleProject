@@ -36,7 +36,7 @@ MySQL："mysql://db_User:db_Password@db_Host/db_Schema" <br/>
 
 #### 2. 確認SQLConfig.py內配置。 <br/>
 
-**針對sample_SQLAlchemy-使用MySQL**<br/>
+**針對sample_SQLAlchemy-使用MySQL SQLConfig.py內配置。**<br/>
 需設置**db_config**內參數：<br/>
 <pre><code>
     db_config = {
@@ -59,7 +59,7 @@ SQLALCHEMY_DATABASE_URI = "mysql://{}:{}@{}/{}".format(
 
 <p></p>
 
-**針對sample_SQLAlchemy_SQLite-使用SQLite** <br/>
+**針對sample_SQLAlchemy_SQLite-使用SQLite SQLConfig.py內配置** <br/>
 需設置**SQLite_File、SQLite_Path**內參數：<br/>
 <pre><code>
 
@@ -115,6 +115,7 @@ SQLALCHEMY_DATABASE_URI = "sqlite:///{}".format(SQLite_Path)
   
 **以手動更新資料庫操作：**<br/>
   1.先手動刪除**migrations**目錄與資料庫中**alembic_version**資料表。 <br/>
+  
   2.開啟終端機(命令提示視窗)，終端機所在的位置必須要跟專案目錄一樣。<br/>
     以 **E:\Project\Python3_SampleProject\sample_SQLAlchemy** 位置為例子：<br/>  
 
