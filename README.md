@@ -37,7 +37,7 @@ MySQL："mysql://db_User:db_Password@db_Host/db_Schema" <br/>
 <p></p>
 
 2. 確認SQLConfig.py內配置。 <br/>
-<p>
+<p></p>
 **[針對sample_SQLAlchemy-使用MySQL]** <br/>
 需設置**db_config**內參數：<br/>
 <pre><code>
@@ -59,8 +59,8 @@ SQLALCHEMY_DATABASE_URI = "mysql://{}:{}@{}/{}".format(
    )
 </code></pre>
 
-</p>
-<p>
+<p></p>
+
 **[針對sample_SQLAlchemy_SQLite-使用SQLite]** <br/>
 需設置**SQLite_File、SQLite_Path**內參數：<br/>
 <pre><code>
@@ -75,7 +75,7 @@ SQLite_Path = os.path.join(os.getcwd(), 'sample_SQLAlchemy_SQLite' , SQLite_File
 SQLALCHEMY_DATABASE_URI = "sqlite:///{}".format(SQLite_Path)
 </code></pre>
 
-</p>
+<p></p>
 
 #### 更新資料表操作：
 使用flask-script和flask-migrate <br/>
