@@ -25,8 +25,9 @@ sample_SQLAlchemy、sample_SQLAlchemy_SQLite：使用ORM操作資料庫練習範
 
 #### 更新資料表操作：
 使用flask-script和flask-migrate <br/>
-可參考
+可參考以下連結資源：
 [在flask中使用flask-migrate管理数据库](https://blog.csdn.net/qq_33279781/article/details/79803376)
+<br/>
 [flask-migrate](https://flask-migrate.readthedocs.io/en/latest/)
 
 使用flask-script管理資料庫更動，命令如下：
@@ -58,7 +59,7 @@ sample_SQLAlchemy、sample_SQLAlchemy_SQLite：使用ORM操作資料庫練習範
   > DB_initialize.bat <br/>
   
 * **以手動更新資料庫操作：<br/>
-  1.先手動刪除migrations目錄與資料庫中alembic_version資料表。 <br/>
+  1.先手動刪除**migrations**目錄與資料庫中**alembic_version**資料表。 <br/>
   2.開啟終端機(命令提示視窗)，終端機所在的位置必須要跟專案目錄一樣。<br/>
     以 **E:\Project\Python3_SampleProject\sample_SQLAlchemy** 位置為例子：<br/>  
 
