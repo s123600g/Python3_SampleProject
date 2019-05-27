@@ -2,11 +2,11 @@
 
 目錄結構說明：
 ----------------------------------------------------------------------------------------------------------------------------------
-1.sample_program：基本型態練習範例。<br/>
-2.sample_filerw：基本讀檔寫檔練習範例。<br/>
-3.sample_SQLite：基本SQLite操作練習範例。<br/>
-4.sample_SQLAlchemy：使用ORM操作資料庫練習範例-以MySQL為操作資料庫。<br/>
-5.sample_SQLAlchemy_SQLite：使用ORM操作資料庫練習範例-以SQLite為操作資料庫。<br/>
+1. sample_program：基本型態練習範例。<br/>
+2. sample_filerw：基本讀檔寫檔練習範例。<br/>
+3. sample_SQLite：基本SQLite操作練習範例。<br/>
+4. sample_SQLAlchemy：使用ORM操作資料庫練習範例-以MySQL為操作資料庫。<br/>
+5. sample_SQLAlchemy_SQLite：使用ORM操作資料庫練習範例-以SQLite為操作資料庫。<br/>
 
 sample_SQLAlchemy、sample_SQLAlchemy_SQLite：使用ORM操作資料庫練習範例。
 ----------------------------------------------------------------------------------------------------------------------------------
@@ -31,6 +31,16 @@ sample_SQLAlchemy、sample_SQLAlchemy_SQLite：使用ORM操作資料庫練習範
 SQLite："sqlite:///filename.db" <br/>
 MySQL："mysql://db_User:db_Password@db_Host/db_Schema" <br/>
 
+#### 執行程式前設置：
+1.SQLConfig.py <br/>
+**sample_SQLAlchemy**
+需設置**db_config**內參數：
+    db_config = {
+        'db_user': "Account",  # 帳戶名稱
+        'db_psw': "Password",  # 帳戶密碼
+        'db_host': "127.0.0.1",  # 資料庫位址
+        'db_schema': "sample",  # 資料庫名稱
+    }
 
 #### 更新資料表操作：
 使用flask-script和flask-migrate <br/>
@@ -72,11 +82,11 @@ MySQL："mysql://db_User:db_Password@db_Host/db_Schema" <br/>
   2.開啟終端機(命令提示視窗)，終端機所在的位置必須要跟專案目錄一樣。<br/>
     以 **E:\Project\Python3_SampleProject\sample_SQLAlchemy** 位置為例子：<br/>  
 
-    切換到E槽<br/>
-    > E:  <br/>
+   切換到E槽<br/>
+   > E:  <br/>
 
-    切換到 Project\Python3_SampleProject\sample_SQLAlchemy 底下<br/>
-    > cd Project\Project\Python3_SampleProject\sample_SQLAlchemy <br/>
+   切換到 Project\Python3_SampleProject\sample_SQLAlchemy 底下<br/>
+   > cd Project\Project\Python3_SampleProject\sample_SQLAlchemy <br/>
     
   3.執行db init <br/>
     > python3 manage.py db init <br/>
