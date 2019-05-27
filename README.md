@@ -8,6 +8,27 @@
 4.sample_SQLAlchemy：使用ORM操作資料庫練習範例-以MySQL為操作資料庫。<br/>
 5.sample_SQLAlchemy_SQLite：使用ORM操作資料庫練習範例-以SQLite為操作資料庫。<br/>
 
+sample_SQLAlchemy、sample_SQLAlchemy_SQLite：使用ORM操作資料庫練習範例。
+----------------------------------------------------------------------------------------------------------------------------------
+#### 內容架構如下：
+[1].sample_SQLAlchemy/DB_Data/sample_user.sql：user資料表Data。 <br/>
+[2].sample_SQLAlchemy/DB_Data/sample_score：score資料表Data。 <br/>
+[2].sample_SQLAlchemy_SQLite/sample.db：sample資料庫內有user資料表、score資料表，兩個資料表都有Data。 <br/>
+[3].migrations/：此為flask針對資料庫操作所產生目錄。<br/>
+[4].Config2.py：一般參數配置。 <br/>
+[5].DB_initialize.bat：更新資料庫內資料表操作管理腳本-Windows 10。 <br/>
+[6].MainControl.py：主要執行運作程式。 <br/>
+[7].Manage.py：操作資料庫針對資料表更動管理，使用flask、flask_migrate、flask_script。 <br/>
+[8].Model.py：放置資訊資料表模型。 <br/>
+[9].Score2.py：成績登錄查詢系統主體。 <br/>
+[10].SQLConfig.py：放置資料庫連接設定參數 <br/>
+
+#### 更新資料表操作：
+1.以DB_initialize.bat腳本運行，需要先確認腳本是否存在專案目錄所在的位置，並且確認腳本內容變數*DirPath*參數值，是否跟專案目錄所在的位置一樣
+> Set DirPath=專案所在的位置
+Ex：
+> Set DirPath=E:\Project\Python3_SampleProject\sample_SQLAlchemy\
+
 sample_program：基本型態練習範例
 ----------------------------------------------------------------------------------------------------------------------------------
 #### 內容架構如下：
@@ -58,16 +79,3 @@ sample_SQLite：基本SQLite操作練習範例。
 [1].sample_SQLite.py <br/>
 [2].data.db <br/>
 
-sample_SQLAlchemy、sample_SQLAlchemy_SQLite：使用ORM操作資料庫練習範例。
-----------------------------------------------------------------------------------------------------------------------------------
-#### 內容架構如下：
-[1].DB_Data/sample_user.sql <br/>
-[2].DB_Data/sample_score <br/>
-[3].migrations/ <br/>
-[4].Config2.py <br/>
-[5].DB_initialize.bat <br/>
-[6].MainControl.py <br/>
-[7].Manage.py <br/>
-[8].Model.py <br/>
-[9].Score2.py <br/>
-[10].SQLConfig.py <br/>
