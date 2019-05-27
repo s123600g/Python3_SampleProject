@@ -24,6 +24,9 @@ sample_SQLAlchemy、sample_SQLAlchemy_SQLite：使用ORM操作資料庫練習範
 [10].SQLConfig.py：放置資料庫連接設定參數 <br/>
 
 #### 更新資料表操作：
+使用flask-script和flask-migrate <br/>
+可參考[在flask中使用flask-migrate管理数据库](https://blog.csdn.net/qq_33279781/article/details/79803376)
+
 * 以DB_initialize.bat腳本運行：<br/>
   1.需要先確認腳本是否存在專案目錄所在的位置，並且確認腳本內容變數**DirPath**參數值，是否跟專案目錄所在的位置一樣。
   > Set DirPath=專案所在的位置<br/>
@@ -55,13 +58,13 @@ sample_SQLAlchemy、sample_SQLAlchemy_SQLite：使用ORM操作資料庫練習範
     切換到 Project\Python3_SampleProject\sample_SQLAlchemy 底下<br/>
     > cd Project\Project\Python3_SampleProject\sample_SQLAlchemy <br/>
     
-  3.執行python3 manage.py db init <br/>
+  3.執行db init <br/>
     > python3 manage.py db init <br/>
   
-  4.執行python3 manage.py db migrate <br/>
+  4.執行db migrate <br/>
     > python3 manage.py db migrate <br/>
     
-  5.執行python3 mange.py db upgrade <br/>
+  5.執行db upgrade <br/>
     > python3 mange.py db upgrade  <br/>
 
 sample_program：基本型態練習範例
