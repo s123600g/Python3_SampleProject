@@ -21,6 +21,7 @@ sample_program：基本型態練習範例
 [7].demo_07.py <br/>
 [8].demo_08.py <br/>
 <p><p/>
+
 ##### sample： 
 [1].sample_01.py <br/>
 [1].sample_02.py <br/>
@@ -33,6 +34,7 @@ sample_program：基本型態練習範例
 [1].sample_09.py <br/>
 [1].sample_10.py <br/>
 <p><p/>
+
 ##### 成績登錄查詢系統簡單應用： 
 [1].Score1.py
 [2].Config1.py
