@@ -37,7 +37,9 @@ MySQL："mysql://db_User:db_Password@db_Host/db_Schema" <br/>
 <p></p>
 
 2. 確認SQLConfig.py內配置。 <br/>
+
 <p></p>
+
 **[針對sample_SQLAlchemy-使用MySQL]** <br/>
 需設置**db_config**內參數：<br/>
 <pre><code>
@@ -64,10 +66,13 @@ SQLALCHEMY_DATABASE_URI = "mysql://{}:{}@{}/{}".format(
 **[針對sample_SQLAlchemy_SQLite-使用SQLite]** <br/>
 需設置**SQLite_File、SQLite_Path**內參數：<br/>
 <pre><code>
-# SQLite File
+
+# SQLite 檔案名稱
 SQLite_File = 'sample.db'
-# SQLite File Path
+
+# SQLite 檔案位置(自動產生)
 SQLite_Path = os.path.join(os.getcwd(), 'sample_SQLAlchemy_SQLite' , SQLite_File)
+
 </code></pre>
 
 資料庫連接語法會抓取**SQLALCHEMY_DATABASE_URI**參數，此參數會去抓取**SQLite_Path**內參數自動產生配置完整DB API 語法。<br/>
