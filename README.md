@@ -20,5 +20,24 @@ sample_program：基本型態練習範例
 [6].demo_06.py <br/>
 [7].demo_07.py <br/>
 [8].demo_08.py <br/>
-
 <p><p/>
+##### sample： 
+[1].sample_01.py <br/>
+[1].sample_02.py <br/>
+[1].sample_03.py <br/>
+[1].sample_04.py <br/>
+[1].sample_05.py <br/>
+[1].sample_06.py <br/>
+[1].sample_07.py <br/>
+[1].sample_08.py <br/>
+[1].sample_09.py <br/>
+[1].sample_10.py <br/>
+<p><p/>
+##### 成績登錄查詢系統簡單應用： 
+[1].Score1.py
+[2].Config1.py
+<p><p/>
+##### 其他檔案：
+[1].data.db
+[2].data.txt
+[3].output.txt
