@@ -23,6 +23,15 @@ sample_SQLAlchemy、sample_SQLAlchemy_SQLite：使用ORM操作資料庫練習範
 [9].Score2.py：成績登錄查詢系統主體。 <br/>
 [10].SQLConfig.py：放置資料庫連接設定參數 <br/>
 
+關於SQLAlchemy ORM操作可參考以下連結：<br/>
+[Python3+SQLAlchemy+Sqlite3实现ORM教程](https://www.cnblogs.com/lsdb/p/9835894.html)<br/>
+[SQLAlchemy 1.3 Documentation](https://docs.sqlalchemy.org/en/13/orm/session_basics.html#what-does-the-session-do)<br/>
+
+關於SQLAlchemy 資料庫連接語法：<br/>
+SQLite："sqlite:///filename.db" <br/>
+MySQL："mysql://db_User:db_Password@db_Host/db_Schema" <br/>
+
+
 #### 更新資料表操作：
 使用flask-script和flask-migrate <br/>
 可參考以下連結資源：
@@ -38,7 +47,7 @@ sample_SQLAlchemy、sample_SQLAlchemy_SQLite：使用ORM操作資料庫練習範
 > python mange.py db upgrade <br/>
 <p></p>
 
-* **以DB_initialize.bat腳本運行：<br/>
+**以DB_initialize.bat腳本運行：**<br/>
   1.需要先確認腳本是否存在專案目錄所在的位置，並且確認腳本內容變數**DirPath**參數值，是否跟專案目錄所在的位置一樣。
   > Set DirPath=專案所在的位置<br/>
 
@@ -58,7 +67,7 @@ sample_SQLAlchemy、sample_SQLAlchemy_SQLite：使用ORM操作資料庫練習範
   執行DB_initialize.bat<br/>
   > DB_initialize.bat <br/>
   
-* **以手動更新資料庫操作：<br/>
+**以手動更新資料庫操作：**<br/>
   1.先手動刪除**migrations**目錄與資料庫中**alembic_version**資料表。 <br/>
   2.開啟終端機(命令提示視窗)，終端機所在的位置必須要跟專案目錄一樣。<br/>
     以 **E:\Project\Python3_SampleProject\sample_SQLAlchemy** 位置為例子：<br/>  
