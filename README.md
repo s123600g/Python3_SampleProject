@@ -27,7 +27,15 @@ sample_SQLAlchemy、sample_SQLAlchemy_SQLite：使用ORM操作資料庫練習範
 使用flask-script和flask-migrate <br/>
 可參考[在flask中使用flask-migrate管理数据库](https://blog.csdn.net/qq_33279781/article/details/79803376)
 
-* 以DB_initialize.bat腳本運行：<br/>
+使用flask-script管理資料庫更動，命令如下：
+> python manage.py db init <br/>
+
+> python manage.py db migrate  <br/>
+
+> python mange.py db upgrade <br/>
+<p></p>
+
+* **以DB_initialize.bat腳本運行：<br/>
   1.需要先確認腳本是否存在專案目錄所在的位置，並且確認腳本內容變數**DirPath**參數值，是否跟專案目錄所在的位置一樣。
   > Set DirPath=專案所在的位置<br/>
 
@@ -47,7 +55,7 @@ sample_SQLAlchemy、sample_SQLAlchemy_SQLite：使用ORM操作資料庫練習範
   執行DB_initialize.bat<br/>
   > DB_initialize.bat <br/>
   
-* 以手動更新資料庫操作：<br/>
+* **以手動更新資料庫操作：<br/>
   1.先手動刪除migrations目錄與資料庫中alembic_version資料表。 <br/>
   2.開啟終端機(命令提示視窗)，終端機所在的位置必須要跟專案目錄一樣。<br/>
     以 **E:\Project\Python3_SampleProject\sample_SQLAlchemy** 位置為例子：<br/>  
