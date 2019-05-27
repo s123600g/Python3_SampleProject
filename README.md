@@ -40,7 +40,7 @@ MySQL："mysql://db_User:db_Password@db_Host/db_Schema" <br/>
 
 <p></p>
 
-**[針對sample_SQLAlchemy-使用MySQL]** <br/>
+**針對sample_SQLAlchemy-使用MySQL**<br/>
 需設置**db_config**內參數：<br/>
 <pre><code>
     db_config = {
@@ -63,7 +63,7 @@ SQLALCHEMY_DATABASE_URI = "mysql://{}:{}@{}/{}".format(
 
 <p></p>
 
-**[針對sample_SQLAlchemy_SQLite-使用SQLite]** <br/>
+**針對sample_SQLAlchemy_SQLite-使用SQLite** <br/>
 需設置**SQLite_File、SQLite_Path**內參數：<br/>
 <pre><code>
 
