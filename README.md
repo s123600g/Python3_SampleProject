@@ -32,21 +32,21 @@ SQLite："sqlite:///filename.db" <br/>
 MySQL："mysql://db_User:db_Password@db_Host/db_Schema" <br/>
 
 #### 執行程式前設置：
-**1.確認是否有存在建立好資料庫。**
+1.確認是否有存在建立好資料庫。
 
 <p></p>
 
-**2.SQLConfig.py** <br/>
-*針對sample_SQLAlchemy-使用MySQL*
+2.SQLConfig.py <br/>
+針對sample_SQLAlchemy-使用MySQL <br/>
 需設置**db_config**內參數：<br/>
-<p><code>
+<pre><code>
     db_config = {
         'db_user': "帳戶名稱",
         'db_psw': "帳戶密碼", 
         'db_host': "資料庫位址", 
         'db_schema': "資料庫名稱",
     }
-    </code></p>
+</code></pre>
     
 資料庫連接語法會抓取**SQLALCHEMY_DATABASE_URI**參數，此參數會去抓取**db_config**內參數自動產生配置完整DB API 語法。<br/>
 <p><code>
