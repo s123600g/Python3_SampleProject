@@ -1,4 +1,3 @@
-# Python 2.7
 ''' 載入(import)套件(libery) '''
 from __future__ import print_function
 import os
