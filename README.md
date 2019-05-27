@@ -25,11 +25,18 @@ sample_SQLAlchemy、sample_SQLAlchemy_SQLite：使用ORM操作資料庫練習範
 
 #### 更新資料表操作：
 * 以DB_initialize.bat腳本運行：<br/>
-  需要先確認腳本是否存在專案目錄所在的位置，並且確認腳本內容變數**DirPath**參數值，是否跟專案目錄所在的位置一樣
+  1.需要先確認腳本是否存在專案目錄所在的位置，並且確認腳本內容變數**DirPath**參數值，是否跟專案目錄所在的位置一樣。
   > Set DirPath=專案所在的位置<br/>
 
   例如： 
   > Set DirPath=E:\Project\Python3_SampleProject\sample_SQLAlchemy\
+  
+  <br/>
+  2.開啟終端機(命令提示視窗)，終端機所在的位置必須要跟專案目錄一樣。
+  以 **E:\Project\Python3_SampleProject\sample_SQLAlchemy\** 位置為例子：
+  > 切換至E：
+  > \>E:
+   
 
 
 
