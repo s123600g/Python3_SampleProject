@@ -31,11 +31,10 @@ sample_SQLAlchemy、sample_SQLAlchemy_SQLite：使用ORM操作資料庫練習範
 SQLite："sqlite:///filename.db" <br/>
 MySQL："mysql://db_User:db_Password@db_Host/db_Schema" <br/>
 
-#### 執行程式前設置：
+## 執行程式前設置：
 1. 確認是否有存在建立好資料庫。<br/>
 
 2. 確認SQLConfig.py內配置。 <br/>
-
 **針對sample_SQLAlchemy-使用MySQL**<br/>
 需設置**db_config**內參數：<br/>
 <pre><code>
@@ -78,7 +77,7 @@ SQLALCHEMY_DATABASE_URI = "sqlite:///{}".format(SQLite_Path)
 
 <p></p>
 
-#### 更新資料表操作：
+## 更新資料表操作：
 使用flask-script和flask-migrate <br/>
 可參考以下連結資源：
 [在flask中使用flask-migrate管理数据库](https://blog.csdn.net/qq_33279781/article/details/79803376)
@@ -135,7 +134,7 @@ SQLALCHEMY_DATABASE_URI = "sqlite:///{}".format(SQLite_Path)
 
 sample_program：基本型態練習範例
 ----------------------------------------------------------------------------------------------------------------------------------
-#### 內容架構如下：
+### 內容架構如下：
 ##### Demo： 
 [1].demo_01.py <br/>
 [2].demo_02.py <br/>
