@@ -25,7 +25,9 @@ sample_SQLAlchemy、sample_SQLAlchemy_SQLite：使用ORM操作資料庫練習範
 
 #### 更新資料表操作：
 使用flask-script和flask-migrate <br/>
-可參考[在flask中使用flask-migrate管理数据库](https://blog.csdn.net/qq_33279781/article/details/79803376)
+可參考
+[在flask中使用flask-migrate管理数据库](https://blog.csdn.net/qq_33279781/article/details/79803376)
+[flask-migrate](https://flask-migrate.readthedocs.io/en/latest/)
 
 使用flask-script管理資料庫更動，命令如下：
 > python manage.py db init <br/>
