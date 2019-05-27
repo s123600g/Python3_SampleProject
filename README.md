@@ -37,10 +37,13 @@ sample_SQLAlchemy、sample_SQLAlchemy_SQLite：使用ORM操作資料庫練習範
   以 **E:\Project\Python3_SampleProject\sample_SQLAlchemy** 位置為例子：<br/>
   
   切換位置<br/>
-  > E:  -->切換到E槽
-  > cd Project\Project\Python3_SampleProject\sample_SQLAlchemy -->切換到 Project\Python3_SampleProject\sample_SQLAlchemy 底下
+  > E:  -->切換到E槽<br/>
+  > cd Project\Project\Python3_SampleProject\sample_SQLAlchemy -->切換到 Project\Python3_SampleProject\sample_SQLAlchemy 底下<br/>
    
-
+  執行DB_initialize.bat<br/>
+  > DB_initialize.bat <br/>
+  
+* 手動更新資料庫操作：<br/>
 
 
 sample_program：基本型態練習範例
