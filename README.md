@@ -24,7 +24,7 @@ sample_SQLAlchemy、sample_SQLAlchemy_SQLite：使用ORM操作資料庫練習範
 [10].SQLConfig.py：放置資料庫連接設定參數 <br/>
 
 #### 更新資料表操作：
-[1].以DB_initialize.bat腳本運行：
+* 以DB_initialize.bat腳本運行：
 需要先確認腳本是否存在專案目錄所在的位置，並且確認腳本內容變數**DirPath**參數值，是否跟專案目錄所在的位置一樣
 > Set DirPath=專案所在的位置<br/>
 
