@@ -11,7 +11,7 @@
 sample_SQLAlchemy、sample_SQLAlchemy_SQLite：使用ORM操作資料庫練習範例。
 ----------------------------------------------------------------------------------------------------------------------------------
 ### 內容架構如下：
-[1].sample_SQLAlchemy/DB_Data/sample_user.sql：user資料表Data。 <br/>
+[1].*sample_SQLAlchemy/DB_Data/sample_user.sql*：user資料表Data。 <br/>
 [2].sample_SQLAlchemy/DB_Data/sample_score：score資料表Data。 <br/>
 [2].sample_SQLAlchemy_SQLite/sample.db：sample資料庫內有user資料表、score資料表，兩個資料表都有Data。 <br/>
 [3].migrations/：此為flask針對資料庫操作所產生目錄。<br/>
