@@ -11,7 +11,7 @@
 sample_SQLAlchemy、sample_SQLAlchemy_SQLite：使用ORM操作資料庫練習範例。
 ----------------------------------------------------------------------------------------------------------------------------------
 ### 內容架構如下：
-[1].*sample_SQLAlchemy/DB_Data/sample_user.sql*：user資料表Data。 <br/>
+[1].sample_SQLAlchemy/DB_Data/sample_user.sql：user資料表Data。 <br/>
 [2].sample_SQLAlchemy/DB_Data/sample_score：score資料表Data。 <br/>
 [2].sample_SQLAlchemy_SQLite/sample.db：sample資料庫內有user資料表、score資料表，兩個資料表都有Data。 <br/>
 [3].migrations/：此為flask針對資料庫操作所產生目錄。<br/>
@@ -33,6 +33,26 @@ MySQL："mysql://db_User:db_Password@db_Host/db_Schema" <br/>
 
 ### 執行程式前設置：
 #### 1. 確認是否有存在建立好資料庫。<br/>
+在本專案使用的資料庫名為**sample**，如想更改使用的資料庫命名，需要更改**SQLConfig.py**內指定參數，可參考以下針對兩種模式資料庫更改方式。<br/>
+**針對sample_SQLAlchemy-使用MySQL**<br/>
+<pre><code>
+    db_config = {
+        'db_user': "帳戶名稱",
+        'db_psw': "帳戶密碼", 
+        'db_host': "資料庫位址", 
+        'db_schema': "資料庫名稱",  <-- 更改此處即可更動使用資料庫。
+    }
+</code></pre>
+
+<p></p>
+
+**針對sample_SQLAlchemy_SQLite-使用SQLite** <br/>
+<pre><code>
+# SQLite 檔案名稱
+SQLite_File = '檔案名稱.db' <-- 在SQLite檔案名稱等於資料庫名稱。
+</code></pre>
+
+<p></p>
 
 #### 2. 確認SQLConfig.py內配置。 <br/>
 
@@ -62,13 +82,10 @@ SQLALCHEMY_DATABASE_URI = "mysql://{}:{}@{}/{}".format(
 **針對sample_SQLAlchemy_SQLite-使用SQLite SQLConfig.py內配置** <br/>
 需設置**SQLite_File、SQLite_Path**內參數：<br/>
 <pre><code>
-
 # SQLite 檔案名稱
 SQLite_File = 'sample.db'
-
 # SQLite 檔案位置(自動產生)
 SQLite_Path = os.path.join(os.getcwd(), 'sample_SQLAlchemy_SQLite' , SQLite_File)
-
 </code></pre>
 
 資料庫連接語法會抓取**SQLALCHEMY_DATABASE_URI**參數，此參數會去抓取**SQLite_Path**內參數自動產生配置完整DB API 語法。<br/>
