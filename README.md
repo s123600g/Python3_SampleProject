@@ -108,19 +108,25 @@ SQLALCHEMY_DATABASE_URI = "sqlite:///{}".format(SQLite_Path)
 
 使用flask-script管理資料庫更動，命令如下：
 <pre><code>
+
 python manage.py db init
+
 </code></pre>
 
 <br/>
 
 <pre><code>
-> python manage.py db migrate
+
+python manage.py db migrate
+
 </code></pre>
 
 <br/>
 
 <pre><code>
+
 python mange.py db upgrade
+
 </code></pre>
 
 <p></p>
