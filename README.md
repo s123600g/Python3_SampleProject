@@ -33,15 +33,15 @@ MySQL："mysql://db_User:db_Password@db_Host/db_Schema" <br/>
 
 ### 執行程式前設置：
 #### 1. 確認是否有存在建立好資料庫。<br/>
-在本專案使用的資料庫名為**sample**，如想更改使用的資料庫命名，需要更改**SQLConfig.py**內指定參數，可參考以下針對兩種模式資料庫更改方式。<br/>
+在本專案使用的資料庫名為**sample**，如果想更改使用的資料庫命名，需要更改**SQLConfig.py**內指定參數，可參考以下針對兩種模式資料庫更改方式。<br/>
 **針對sample_SQLAlchemy-使用MySQL**<br/>
 <pre><code>
-    db_config = {
+db_config = {
         'db_user': "帳戶名稱",
         'db_psw': "帳戶密碼", 
         'db_host': "資料庫位址", 
         'db_schema': "資料庫名稱",  <-- 更改此處即可更動使用資料庫。
-    }
+        }
 </code></pre>
 
 <p></p>
