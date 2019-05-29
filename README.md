@@ -111,19 +111,11 @@ SQLALCHEMY_DATABASE_URI = "sqlite:///{}".format(SQLite_Path)
 
 python manage.py db init
 
-</code></pre>
-
 <br/>
-
-<pre><code>
 
 python manage.py db migrate
 
-</code></pre>
-
 <br/>
-
-<pre><code>
 
 python mange.py db upgrade
 
