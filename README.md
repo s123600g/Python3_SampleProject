@@ -133,7 +133,9 @@ SQLALCHEMY_DATABASE_URI = "sqlite:///{}".format(SQLite_Path)
    
   執行DB_initialize.bat<br/>
   > DB_initialize.bat <br/>
-  
+
+<p></p>
+
 **以手動更新資料庫操作：**<br/>
   1.先手動刪除**migrations**目錄與資料庫中**alembic_version**資料表。 <br/>
   
@@ -154,6 +156,8 @@ SQLALCHEMY_DATABASE_URI = "sqlite:///{}".format(SQLite_Path)
     
    執行db upgrade <br/>
    > python3 mange.py db upgrade  <br/>
+
+<p></p>
 
 sample_program：基本型態練習範例
 ----------------------------------------------------------------------------------------------------------------------------------
@@ -192,12 +196,16 @@ sample_program：基本型態練習範例
 [2].data.txt <br/>
 [3].output.txt <br/>
 
+<p></p>
+
 sample_filerw：基本讀檔寫檔練習範例。
 ----------------------------------------------------------------------------------------------------------------------------------
 #### 內容架構如下：
 [1].sample_filerw.py <br/>
 [2].data.txt <br/>
 [3].output.txt <br/>
+
+<p></p>
 
 sample_SQLite：基本SQLite操作練習範例。
 ----------------------------------------------------------------------------------------------------------------------------------
