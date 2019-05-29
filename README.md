@@ -28,8 +28,15 @@ sample_SQLAlchemy、sample_SQLAlchemy_SQLite：使用ORM操作資料庫練習範
 [SQLAlchemy 1.3 Documentation](https://docs.sqlalchemy.org/en/13/orm/session_basics.html#what-does-the-session-do)<br/>
 
 關於SQLAlchemy 資料庫連接語法：<br/>
-SQLite："sqlite:///filename.db" <br/>
-MySQL："mysql://db_User:db_Password@db_Host/db_Schema" <br/>
+<pre><code>
+SQLite之連接語法："sqlite:///filename.db" 
+</code></pre>
+<br/>
+<pre><code>
+MySQL之連接語法： "mysql://db_User:db_Password@db_Host/db_Schema"
+</code></pre>
+
+<p></p>
 
 ### 執行程式前設置：
 #### 1. 確認是否有存在建立好資料庫。<br/>
