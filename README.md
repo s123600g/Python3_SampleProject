@@ -23,11 +23,11 @@ sample_SQLAlchemy、sample_SQLAlchemy_SQLite：使用ORM操作資料庫練習範
 [9].Score2.py：成績登錄查詢系統主體。 <br/>
 [10].SQLConfig.py：放置資料庫連接設定參數 <br/>
 
-*關於SQLAlchemy ORM操作可參考以下連結：* <br/>
+**關於SQLAlchemy ORM操作可參考以下連結：** <br/>
 [Python3+SQLAlchemy+Sqlite3实现ORM教程](https://www.cnblogs.com/lsdb/p/9835894.html)<br/>
 [SQLAlchemy 1.3 Documentation](https://docs.sqlalchemy.org/en/13/orm/session_basics.html#what-does-the-session-do)<br/>
 
-*關於SQLAlchemy 資料庫連接語法：* <br/>
+**關於SQLAlchemy 資料庫連接語法：** <br/>
 [1].SQLite之連接語法：<br/>
 > "sqlite:///filename.db" <br/>
 
