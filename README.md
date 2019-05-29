@@ -30,8 +30,9 @@ sample_SQLAlchemy、sample_SQLAlchemy_SQLite：使用ORM操作資料庫練習範
 關於SQLAlchemy 資料庫連接語法：<br/>
 [1].SQLite之連接語法：<br/>
 > "sqlite:///filename.db" <br/>
-[2].
-MySQL之連接語法： <br/>
+
+[2].MySQL之連接語法： <br/>
+
 > "mysql://db_User:db_Password@db_Host/db_Schema" <br/>
 <p></p>
 
