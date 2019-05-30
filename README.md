@@ -1,3 +1,5 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-red.svg)](https://opensource.org/licenses/MIT)
+
 # Python3 練習範例專案
 
 目錄結構說明：
