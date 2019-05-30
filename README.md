@@ -61,7 +61,7 @@ SQLite_File = '檔案名稱.db' <-- 在SQLite檔案名稱等於資料庫名稱�
 
 #### 2. 確認SQLConfig.py內配置。 <br/>
 
-**針對sample_SQLAlchemy-使用MySQL SQLConfig.py內配置。**<br/>
+**針對sample_SQLAlchemy-使用MySQL SQLConfig.py內配置**<br/>
 需設置**db_config**內參數：<br/>
 <pre><code>
     db_config = {
